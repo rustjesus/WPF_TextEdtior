@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPF_TextEdtior.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="800" Width="800">
+    <Grid>
+        <!-- Define the row definitions for the Grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Auto-sized row for the Menu -->
+            <RowDefinition Height="*"/>
+            <!-- Star-sized row for the TextBox -->
+        </Grid.RowDefinitions>
+
+        <!-- Menu definition -->
+        <Menu Grid.Row="0" Background="#FF6F1111" RenderTransformOrigin="0.5,0">
+            <!-- Add MenuItems here -->
+        </Menu>
+
+        <!-- TextBox definition -->
+        <TextBox Grid.Row="1" TextWrapping="Wrap" Text="TextBox" 
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                 Width="Auto" Height="Auto" TextChanged="TextBox_TextChanged" Foreground="Red"/>
+    </Grid>
+</Window>
